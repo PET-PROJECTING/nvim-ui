@@ -1,0 +1,83 @@
+{
+  "name": "nvim-dynamic-cursor-color",
+  "displayName": "Neovim dynamic cursor color",
+  "description": "Adjust cursor color dynamically based on vim mode",
+  "author": "Oleh Klym k4138413@gmail.com",
+  "keywords": [
+    "neovim",
+    "ui",
+    "theme",
+    "vscode",
+    "modes"
+  ],
+  "version": "0.1.0",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "extensionDependencies": [
+    "asvetliakov.vscode-neovim"
+  ],
+  "categories": [
+    "Other",
+    "Themes"
+  ],
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "publisher": "Oleh Klym",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "nvim-ui-modes.normal",
+        "title": "Neovim: Color mode normal"
+      },
+      {
+        "command": "nvim-ui-modes.command",
+        "title": "Neovim: Color mode  command"
+      },
+      {
+        "command": "nvim-ui-modes.insert",
+        "title": "Neovim: Color mode  insert"
+      },
+      {
+        "command": "nvim-ui-modes.visual",
+        "title": "Neovim: Color mode  visual"
+      },
+      {
+        "command": "nvim-ui-modes.replace",
+        "title": "Neovim: Color mode  replace"
+      }
+    ],
+    "configuration": {
+      "title": "Neovim Color Modes",
+      "properties": {
+        "nvim-ui-modes.colorCustomizations": {
+          "type": "object",
+          "default": {
+            "normal": { "editorCursor.foreground": "#abb2bf", "statusBar.background": "#3e4451", "statusBar.foreground": "#abb2bf" },
+            "command": { "editorCursor.foreground": "#f1fa8c", "statusBar.background": "#4b4b1f", "statusBar.foreground": "#f1fa8c" },
+            "insert": { "editorCursor.foreground": "#50fa7b", "statusBar.background": "#1f4b2f", "statusBar.foreground": "#50fa7b" },
+            "visual": { "editorCursor.foreground": "#8be9fd", "statusBar.background": "#1f4b5c", "statusBar.foreground": "#8be9fd" },
+            "replace": { "editorCursor.foreground": "#ff79c6", "statusBar.background": "#4b2f4b", "statusBar.foreground": "#ff79c6" }
+          },
+          "description": "Cursor and status bar colors per NVIM mode. Keys: editorCursor.foreground, editorCursor.background, statusBar.background, statusBar.foreground."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^v22.10.2",
+    "@types/vscode": "^1.96.0",
+    "@vscode/vsce": "^3.2.1",
+    "typescript": "^5.7.2"
+  }
+}
