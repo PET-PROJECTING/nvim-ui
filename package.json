@@ -1,15 +1,9 @@
 {
   "name": "nvim-dynamic-ui-modesq",
-  "displayName": "Neovim dynamic ui modes colors",
-  "description": "Adjust interface elements colors dynamically based on vim mode",
-  "keywords": [
-    "neovim",
-    "ui",
-    "theme",
-    "vscode",
-    "modes"
-  ],
-  "version": "0.1.0",
+  "displayName": "Neovim dynamic UI elements colors",
+  "description": "Adjust interface elements colors dynamically based on Neovim mode",
+  "keywords": ["neovim", "ui", "theme", "vscode", "modes"],
+  "version": "0.1.1",
   "license": "MIT",
   "publisher": "beforeblackout",
   "repository": {

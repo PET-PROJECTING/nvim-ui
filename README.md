@@ -1,4 +1,4 @@
-# Neovim Dynamic Cursor Color
+# Neovim Dynamic UI elements colors
 
 Adjust cursor and status bar colors dynamically based on Neovim mode (normal, insert, visual, command, replace). Requires the [VSCode Neovim](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim) extension.
 
