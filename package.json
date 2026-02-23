@@ -1,8 +1,7 @@
 {
-  "name": "nvim-dynamic-cursor-color",
-  "displayName": "Neovim dynamic cursor color",
-  "description": "Adjust cursor color dynamically based on vim mode",
-  "author": "Oleh Klym k4138413@gmail.com",
+  "name": "nvim-dynamic-ui-modesq",
+  "displayName": "Neovim dynamic ui modes colors",
+  "description": "Adjust interface elements colors dynamically based on vim mode",
   "keywords": [
     "neovim",
     "ui",
@@ -12,6 +11,11 @@
   ],
   "version": "0.1.0",
   "license": "MIT",
+  "publisher": "beforeblackout",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PET-PROJECTING/nvim-ui"
+  },
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -26,7 +30,6 @@
     "ui",
     "workspace"
   ],
-  "publisher": "Oleh Klym",
   "activationEvents": [
     "onStartupFinished"
   ],
